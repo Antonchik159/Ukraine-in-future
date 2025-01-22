@@ -221,6 +221,82 @@ class Ui_Main_page(object):
 "}")
         self.dishes_inf_btn.setObjectName("dishes_inf_btn")
         self.horizontalLayout_3.addWidget(self.dishes_inf_btn)
+        self.horizontalLayoutWidget_2 = QtWidgets.QWidget(self.centralwidget)
+        self.horizontalLayoutWidget_2.setGeometry(QtCore.QRect(10, 190, 511, 35))
+        self.horizontalLayoutWidget_2.setObjectName("horizontalLayoutWidget_2")
+        self.horizontalLayout_4 = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget_2)
+        self.horizontalLayout_4.setContentsMargins(0, 0, 0, 0)
+        self.horizontalLayout_4.setObjectName("horizontalLayout_4")
+        self.bn_film = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.bn_film.setFont(font)
+        self.bn_film.setStyleSheet("QPushButton {\n"
+"    background-color: #4CAF50;\n"
+"    border: none;\n"
+"    color: white;\n"
+"    padding: 5px 15px;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #367c39;\n"
+"}")
+        self.bn_film.setObjectName("bn_film")
+        self.horizontalLayout_4.addWidget(self.bn_film)
+        self.btn_film_info = QtWidgets.QPushButton(self.horizontalLayoutWidget_2)
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.btn_film_info.setFont(font)
+        self.btn_film_info.setStyleSheet("QPushButton {\n"
+"    background-color: #4CAF50;\n"
+"    border: none;\n"
+"    color: white;\n"
+"    padding: 5px 15px;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #367c39;\n"
+"}")
+        self.btn_film_info.setObjectName("btn_film_info")
+        self.horizontalLayout_4.addWidget(self.btn_film_info)
+        self.inst_btn = QtWidgets.QPushButton(self.centralwidget)
+        self.inst_btn.setGeometry(QtCore.QRect(470, 390, 41, 31))
+        self.inst_btn.setStyleSheet("QPushButton {\n"
+"    background-color: #4CAF50;\n"
+"    border: none;\n"
+"    color: white;\n"
+"    padding: 5px 15px;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #367c39;\n"
+"}")
+        self.inst_btn.setText("")
+        icon1 = QtGui.QIcon()
+        icon1.addPixmap(QtGui.QPixmap("image/insta.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        self.inst_btn.setIcon(icon1)
+        self.inst_btn.setObjectName("inst_btn")
         Main_page.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Main_page)
@@ -234,8 +310,10 @@ class Ui_Main_page(object):
         self.note_inf.setText(_translate("Main_page", "Як користуватись"))
         self.btn_book.setText(_translate("Main_page", "Довідник"))
         self.book_inf.setText(_translate("Main_page", "Як користуватись"))
-        self.dishes_btn.setText(_translate("Main_page", "Старовинні страви"))
+        self.dishes_btn.setText(_translate("Main_page", "Смачні страви"))
         self.dishes_inf_btn.setText(_translate("Main_page", "Як користуватись"))
+        self.bn_film.setText(_translate("Main_page", "Фільми"))
+        self.btn_film_info.setText(_translate("Main_page", "Як користуватись"))
 
 
 if __name__ == "__main__":

@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Note(object):
     def setupUi(self, Note):
         Note.setObjectName("Note")
-        Note.resize(400, 300)
+        Note.resize(402, 300)
         Note.setStyleSheet("background-color: #ffffff;")
         self.centralwidget = QtWidgets.QWidget(Note)
         self.centralwidget.setObjectName("centralwidget")
@@ -30,6 +30,29 @@ class Ui_Note(object):
         self.title_edit = QtWidgets.QLineEdit(self.verticalLayoutWidget)
         self.title_edit.setObjectName("title_edit")
         self.layout.addWidget(self.title_edit)
+        self.pushButton = QtWidgets.QPushButton(self.verticalLayoutWidget)
+        font = QtGui.QFont()
+        font.setPointSize(12)
+        self.pushButton.setFont(font)
+        self.pushButton.setStyleSheet("QPushButton {\n"
+"    background-color: #4CAF50;\n"
+"    border: none;\n"
+"    color: white;\n"
+"    padding: 5px 15px;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #367c39;\n"
+"}")
+        self.pushButton.setObjectName("pushButton")
+        self.layout.addWidget(self.pushButton)
         self.add_button = QtWidgets.QPushButton(self.verticalLayoutWidget)
         font = QtGui.QFont()
         font.setPointSize(10)
@@ -64,6 +87,7 @@ class Ui_Note(object):
     def retranslateUi(self, Note):
         _translate = QtCore.QCoreApplication.translate
         Note.setWindowTitle(_translate("Note", "Нотатки"))
+        self.pushButton.setText(_translate("Note", "Видалити"))
         self.add_button.setText(_translate("Note", "Додати нотатку"))
 
 

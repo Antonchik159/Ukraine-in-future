@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
+    <width>402</width>
     <height>300</height>
    </rect>
   </property>
@@ -32,6 +32,37 @@
      </item>
      <item>
       <widget class="QLineEdit" name="title_edit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    background-color: #45a049;
+}
+
+QPushButton:pressed {
+    background-color: #367c39;
+}</string>
+       </property>
+       <property name="text">
+        <string>Видалити</string>
+       </property>
+      </widget>
      </item>
      <item>
       <widget class="QPushButton" name="add_button">

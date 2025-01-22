@@ -14,12 +14,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Setting(object):
     def setupUi(self, Setting):
         Setting.setObjectName("Setting")
-        Setting.resize(233, 321)
+        Setting.resize(233, 333)
         Setting.setStyleSheet("background-color: #ffffff;")
         self.centralwidget = QtWidgets.QWidget(Setting)
         self.centralwidget.setObjectName("centralwidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
-        self.label.setGeometry(QtCore.QRect(80, 300, 71, 16))
+        self.label.setGeometry(QtCore.QRect(10, 310, 71, 16))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -27,7 +27,7 @@ class Ui_Setting(object):
         self.label.setSizePolicy(sizePolicy)
         self.label.setObjectName("label")
         self.horizontalLayoutWidget = QtWidgets.QWidget(self.centralwidget)
-        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 220, 231, 80))
+        self.horizontalLayoutWidget.setGeometry(QtCore.QRect(0, 230, 231, 80))
         self.horizontalLayoutWidget.setObjectName("horizontalLayoutWidget")
         self.horizontalLayout = QtWidgets.QHBoxLayout(self.horizontalLayoutWidget)
         self.horizontalLayout.setContentsMargins(0, 0, 0, 0)
@@ -112,13 +112,13 @@ class Ui_Setting(object):
         font.setPointSize(10)
         self.checkBox.setFont(font)
         self.checkBox.setObjectName("checkBox")
-        self.widget = QtWidgets.QWidget(self.centralwidget)
-        self.widget.setGeometry(QtCore.QRect(0, 40, 121, 24))
-        self.widget.setObjectName("widget")
-        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.widget)
+        self.layoutWidget = QtWidgets.QWidget(self.centralwidget)
+        self.layoutWidget.setGeometry(QtCore.QRect(0, 40, 121, 24))
+        self.layoutWidget.setObjectName("layoutWidget")
+        self.horizontalLayout_2 = QtWidgets.QHBoxLayout(self.layoutWidget)
         self.horizontalLayout_2.setContentsMargins(0, 0, 0, 0)
         self.horizontalLayout_2.setObjectName("horizontalLayout_2")
-        self.horizontalSlider = QtWidgets.QSlider(self.widget)
+        self.horizontalSlider = QtWidgets.QSlider(self.layoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -127,13 +127,14 @@ class Ui_Setting(object):
         self.horizontalSlider.setMinimum(10)
         self.horizontalSlider.setMaximum(100)
         self.horizontalSlider.setPageStep(5)
-        self.horizontalSlider.setProperty("value", 10)
+        self.horizontalSlider.setProperty("value", 100)
+        self.horizontalSlider.setSliderPosition(100)
         self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
         self.horizontalSlider.setInvertedControls(True)
         self.horizontalSlider.setTickInterval(0)
         self.horizontalSlider.setObjectName("horizontalSlider")
         self.horizontalLayout_2.addWidget(self.horizontalSlider)
-        self.label_2 = QtWidgets.QLabel(self.widget)
+        self.label_2 = QtWidgets.QLabel(self.layoutWidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -144,6 +145,29 @@ class Ui_Setting(object):
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_2.addWidget(self.label_2)
+        self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
+        self.pushButton_2.setGeometry(QtCore.QRect(50, 190, 127, 33))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("QPushButton {\n"
+"    background-color: #4CAF50;\n"
+"    border: none;\n"
+"    color: white;\n"
+"    padding: 5px 15px;\n"
+"    text-align: center;\n"
+"    text-decoration: none;\n"
+"    border-radius: 5px;\n"
+"}\n"
+"\n"
+"QPushButton:hover {\n"
+"    background-color: #45a049;\n"
+"}\n"
+"\n"
+"QPushButton:pressed {\n"
+"    background-color: #367c39;\n"
+"}")
+        self.pushButton_2.setObjectName("pushButton_2")
         Setting.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(Setting)
@@ -161,6 +185,7 @@ class Ui_Setting(object):
         self.label_4.setText(_translate("Setting", "Звуки"))
         self.checkBox.setText(_translate("Setting", "Натискання на кнопку"))
         self.label_2.setText(_translate("Setting", "0"))
+        self.pushButton_2.setText(_translate("Setting", "Стандартні"))
 
 
 if __name__ == "__main__":
